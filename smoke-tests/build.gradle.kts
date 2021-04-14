@@ -56,6 +56,7 @@ tasks.test {
         }
     }
 
+    
     val shadowTask : Jar = project(":javaagent").tasks.named<Jar>("shadowJar").get()
     inputs.files(layout.files(shadowTask))
 
